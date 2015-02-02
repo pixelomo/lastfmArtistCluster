@@ -39,6 +39,7 @@ h1{
 	box-sizing: border-box;
 	display: none;
 	font-size: 47px;
+	background-size: cover;
 }
 h1 span{
 	position: absolute;
@@ -67,6 +68,7 @@ li{
 	padding: 5px;
 	box-sizing: border-box;
 	font-size: 14px;
+	background-size: cover;
 }
 li span{
 	position: absolute;
@@ -75,6 +77,9 @@ li span{
 	left: 50%;
 	width: 94px;
 	margin-top: 30px;
+	background: #fff;
+	border-radius: 15px;
+	opacity: 0.8;
 }
 li#artist-0{
 	margin: -296px 0 0 -323px; 
@@ -230,13 +235,11 @@ li:nth-child(n+37){
 li:hover{
 	border: 2px solid #fff;
 	cursor: pointer;
-	background: #000;
-	color: #fff;
+	color: #000;
+	border-radius: 15px;
+	opacity: 1;
 }
 
-img{
-	display: none;
-}
 
 span[id^='tag-']{
 	border-radius: 50%;

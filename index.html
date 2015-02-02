@@ -38,13 +38,18 @@
 				
 				//Send JSON call to lastfm's API to retrieve similar artists
 				    $.getJSON('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + search + '&api_key=' + apiKey + '&format=json', function(data) {
+				   //get artist img URL - not working as I can't make multiple JSOn calls to lastfm it only returns the first one
+				   // $('#main').css('background','url('+ data.artist.image[3]['#text'] +') no-repeat');
+				   
 				    //loop through similar artists and append their name's to ul
 					    var similar = data.similarartists.artist;
 					    for(i = 0; i < similar.length; i++){
-					    $('#similar').append('<li id=artist-'+i+'><span>'+similar[i].name+'</span></li>');
+					    $('#similar').append('<li id=artist-'+i+' style="background: url('+ similar[i].image[3]['#text'] +') no-repeat"><span>'+similar[i].name+'</span></li>');
+					    
 					    };
 					    //The commented out code below returns img url's for each artist but this feature has been deprecated by lastfm so the links do not work sadly.
 					    //<img src='+ similar[i].image[3]['#text'] +'/>
+					    //got this working...discovered a '/' was being added to each URL which caused the 404
 					    
 					    //This call returns the top 5 Genre tags but does not work in conjunction with the previous call, I have tried combining them in  multiple ways
 //					    $.getJSON('http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist='+ search + '&api_key=' + apiKey + '&format=json', function(data) {
@@ -53,7 +58,7 @@
 //					        $('#tags').append('<span id=tag-'+j+'>'+tags[j].name+'</span>');
 //					        };
 //					    			    
-				    console.log(data);							
+				    		console.log(data);					
 				    });
 				    return false;
 				});

@@ -30,23 +30,24 @@ input[type='submit']{
 	border-radius: 0 7px 7px 0;
 }
 h1{
-	width: 300px;
+	width: 340px;
 	margin: 50px auto;
 	border-radius: 50%;
-	height: 300px;
+	height: 340px;
 	border: 5px solid;
 	display: inline-block;
 	box-sizing: border-box;
 	display: none;
-	font-size: 47px;
+	font-size: 33px;
 	background-size: cover;
+	font-weight: 600;
 }
 h1 span{
 	position: absolute;
 	text-align: center;
-	margin-left: -75px;
+	margin-left: -85px;
 	left: 50%;
-	width: 150px;
+	width: 170px;
 	margin-top: 90px;
 	text-transform: capitalize;
 }
@@ -67,8 +68,9 @@ li{
 	-webkit-transition: 0.25s ease-out;
 	padding: 5px;
 	box-sizing: border-box;
-	font-size: 14px;
+	font-size: 13px;
 	background-size: cover;
+	border: 2px solid #fff;
 }
 li span{
 	position: absolute;
@@ -76,10 +78,13 @@ li span{
 	margin-left: -47px;
 	left: 50%;
 	width: 94px;
-	margin-top: 30px;
-	background: #fff;
-	border-radius: 15px;
+	margin-top: 24px;
+	background: rgba(0, 0, 0, .55);
+	color: #fff;
+	border-radius: 8px;
 	opacity: 0.8;
+	box-sizing: border-box;
+	padding: 0 3px;
 }
 li#artist-0{
 	margin: -296px 0 0 -323px; 
@@ -102,7 +107,7 @@ li#artist-3{
 	font-weight: bold;
 }
 li#artist-4{
-	margin: -281px 0 0px 202px; 
+	margin: -281px 0 0px 217px; 
 	-webkit-transform: scale(1.7);
 	font-weight: bold;
 }
@@ -233,7 +238,7 @@ li:nth-child(n+37){
 }*/
 
 li:hover{
-	border: 2px solid #fff;
+	
 	cursor: pointer;
 	color: #000;
 	border-radius: 15px;

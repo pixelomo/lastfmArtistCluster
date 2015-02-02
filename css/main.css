@@ -1,0 +1,259 @@
+body{
+	background: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+*:focus {
+    outline: 0;
+}
+form{
+	width: 651px;
+	margin: 0 auto;
+}
+input{
+	padding: 10px 30px;
+	border-radius: 7px;
+	border: 0;
+	box-shadow: -2px -2px #eee;
+	margin-top: 30px;
+	font-size: 18px;
+}
+input[type='submit']{
+	background: crimson;
+	box-shadow: none;
+	padding: 12px 20px 10px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: -18px;
+	border-radius: 0 7px 7px 0;
+}
+h1{
+	width: 300px;
+	margin: 50px auto;
+	border-radius: 50%;
+	height: 300px;
+	border: 5px solid;
+	display: inline-block;
+	box-sizing: border-box;
+	display: none;
+	font-size: 47px;
+}
+h1 span{
+	position: absolute;
+	text-align: center;
+	margin-left: -75px;
+	left: 50%;
+	width: 150px;
+	margin-top: 90px;
+	text-transform: capitalize;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+}
+li{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	color: #000;
+	background: #fff;
+	margin: 8px;
+	display: inline-block;
+	position: absolute;
+	-webkit-transition: 0.25s ease-out;
+	padding: 5px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+li span{
+	position: absolute;
+	text-align: center;
+	margin-left: -47px;
+	left: 50%;
+	width: 94px;
+	margin-top: 30px;
+}
+li#artist-0{
+	margin: -296px 0 0 -323px; 
+	-webkit-transform: scale(2);
+	font-weight: bold;
+}
+li#artist-1{
+	margin: -93px 0 0 -242px; 
+	-webkit-transform: scale(1.8);
+	font-weight: bold;
+}
+li#artist-2{
+	margin: -17px 0 0 -53px; 
+	-webkit-transform: scale(1.7);
+	font-weight: bold;
+}
+li#artist-3{
+	margin: -97px 0 0 120px; 
+	-webkit-transform: scale(1.6);
+	font-weight: bold;
+}
+li#artist-4{
+	margin: -281px 0 0px 202px; 
+	-webkit-transform: scale(1.7);
+	font-weight: bold;
+}
+li#artist-5{
+	margin: -126px 0 0 -424px; 
+	-webkit-transform: scale(1.5);
+	font-weight: bold;
+}
+li#artist-6{
+	margin: 40px 0 0 -378px; 
+	-webkit-transform: scale(1.4);
+}
+li#artist-7{
+	margin: 97px 0 0 -209px; 
+	-webkit-transform: scale(1.6);
+}
+li#artist-8{
+	margin: 83px 0 0 91px; 
+	-webkit-transform: scale(1.3);
+}
+li#artist-9{
+	margin: 39px 0 0 244px; 
+	-webkit-transform: scale(1.4);
+}
+li#artist-10{
+	margin: -121px 0 0 298px; 
+	-webkit-transform: scale(1.5);
+}
+
+li#artist-11{
+	margin: -269px 0 0 -514px;
+	-webkit-transform: scale(1.2);
+}
+li#artist-12{
+	margin: -138px 0 0 -581px; 
+	-webkit-transform: scale(1.1);
+}
+li#artist-13{
+	margin: 1px 0 0 -527px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-14{
+	margin: 149px 0 0 -494px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-15{
+	margin: 200px 0 0 -344px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-16{
+	margin: 264px 0 0 -184px; 
+	-webkit-transform: scale(1.1);
+}
+li#artist-17{
+	margin: 160px 0 0 -47px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-18{
+	margin: 235px 0 0 80px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-19{
+	margin: 198px 0 0 224px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-20{
+	margin: 147px 0 0 374px; 
+	-webkit-transform: scale(1.2);
+}
+
+li#artist-21{
+	margin: 0 0 0 403px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-22{
+	margin: -136px 0 0 462px; 
+	-webkit-transform: scale(1.1);
+}
+li#artist-23{
+	margin: -268px 0 0 374px; 
+	-webkit-transform: scale(1.2);
+}
+li#artist-24{
+	margin: 288px 0 0 -447px; 
+}
+li#artist-25{
+	margin: 325px 0 0 -307px; 
+}
+li#artist-26{
+	margin: 392px 0 0 -176px; 
+}
+li#artist-27{
+	margin: 310px 0 0 -46px; 
+}
+li#artist-28{
+	margin: 373px 0 0 74px; 
+}
+li#artist-29{
+	margin: 322px 0 0 183px; 
+}
+li#artist-30{
+	margin: 293px 0 0 323px; 
+}
+li#artist-31{
+	margin: 413px 0 0 -412px; 
+}
+li#artist-32{
+	margin: 441px 0 0 -282px; 
+}
+li#artist-33{
+	margin: 441px 0 0 -54px; 
+}
+li#artist-34{
+	margin: 441px 0 0 172px; 
+}
+li#artist-35{
+	margin: 414px 0 0 294px; 
+}
+li:nth-child(n+37){
+	position: relative;
+	float: left;
+	margin: 15px;
+	top: 541px;
+}
+/*li:nth-child(n+72){
+	-webkit-transform: scale(0.7);
+	margin: 10px;
+}*/
+
+li:hover{
+	border: 2px solid #fff;
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+}
+
+img{
+	display: none;
+}
+
+span[id^='tag-']{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background: crimson;
+	margin: 10px;
+	padding: 25px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+

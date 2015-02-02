@@ -32,19 +32,24 @@
 		$(document).ready(function() {
 			
 			$('form').submit(function() {
+			//Clear previous results
 				$('#similar li').remove();
 				var apiKey = "0b76a6a8ce4cc09bfa320ab961aee625";
+				//Append search text to h1
 				var search = $('#artist').val();
 				$('#main').show();
 				$('#main span').text(search);
-				
+				//Send JSON call to lastfm's API to retrieve similar artists
 				    $.getJSON('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + search + '&api_key=' + apiKey + '&format=json', function(data) {
+				    //loop through similar artists and append their name's to ul
 					    var similar = data.similarartists.artist;
 					    for(i = 0; i < similar.length; i++){
 					    $('#similar').append('<li id=artist-'+i+'><span>'+similar[i].name+'</span></li>');
 					    };
+					    //The commented out code below returns img url's for each artist but this feature has been deprecated by lastfm so the links do not work sadly.
 					    //<img src='+ similar[i].image[3]['#text'] +'/>
 					    
+					    //This call returns the top 5 Genre tags but does not work in conjunction with the previous call, I have tried combining them in  multiple ways
 //					    $.getJSON('http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist='+ search + '&api_key=' + apiKey + '&format=json', function(data) {
 //					        var tags = data.toptags.tag;
 //					        for(j = 0; j < 5; j++){
@@ -57,16 +62,11 @@
 				    });
 				    return false;
 				});
-				
+				//When clicking any similar artist append their name to the search box and submit the form
 				$("#similar").on("click", "li", function() {
 					var click = $(this).text();
 					$('#artist').val(click);
 					$(this).closest('form').submit();
-//					$.getJSON('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + search + '&api_key=' + apiKey + '&format=json', function(data) {
-//					    var similar = data.similarartists.artist;
-//					    for(i = 0; i < similar.length; i++){
-//					    $('#similar').append('<li id=artist-'+i+'><span>'+similar[i].name+'</span></li>');
-//					    };
 				});
 				
 			});
